@@ -4,6 +4,7 @@
     <title>5K & 10K Registration Form</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <style>
       html, body {
         min-height: 100%;
@@ -167,20 +168,23 @@
         background: #ff9800;
       }
       @media (min-width: 568px) {
-      .name-item, .city-item {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        .name-item, .city-item {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .name-item input, .name-item div {
+          width: calc(50% - 20px);
+        }
+        .name-item div input {
+          width:97%;}
+        .name-item div label {
+          display:block;
+          padding-bottom:5px;
+        }
       }
-      .name-item input, .name-item div {
-        width: calc(50% - 20px);
-      }
-      .name-item div input {
-        width:97%;}
-      .name-item div label {
-        display:block;
-        padding-bottom:5px;
-      }
+      .phone-number {
+        display: none;
       }
     </style>
   </head>
@@ -213,18 +217,18 @@
           <label for="notif">Would you like to be notified about your health risk?<span>*</span></label> 
           <br>
 
-          <input type="radio" name="yes" id="yes" value="yes"> 
-
-          <label for="yes" name="yes" class="radio" onclick="func();">Yes</label>
+          <input type="radio" name="yes" id="yes" value="yes" class="yes" > 
+          <label for="yes" name="yes" class="radio">Yes</label>
           
           <input type="radio" name,id,value="no">
 
           <label for="no" name="no" class="radio">No</label> 
 
           <br>
-          <label for="phone">Enter your phone number:</label> <!-- make this only pop up if "Yes" is clicked-->
-          <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
-
+          <div class="phone-number">
+            <label for="phone">Enter your phone number:</label> <!-- make this only pop up if "Yes" is clicked-->
+            <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+          </div>  
           
         <div class="btn-block">
           <button>Submit</button> <!-- make this type="submit"? ; locally, it is sending me back to the home directory--> 
@@ -236,10 +240,9 @@
       <p>HTML Template is from <a href="https://www.w3docs.com/learn-html/html-form-templates.html">W3 Docs</a></p>
     </div> 
     <script> 
-      function func() {
-        var checkbox = document.getElementsByClassName('yes');
-        
-      };
+      $(".yes").click(function() {
+        $(".phone-number").show();
+      });
     </script>
   </body>
 </html>
