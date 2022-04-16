@@ -247,15 +247,16 @@
       };
       function submit_data() {
         const patientData = {
-          name: document.getElementById("name").value,
-          age: document.getElementById("age").value,
-          resting_bpm: document.getElementById("heart-rate").value,
-          systolic_pressure: document.getElementById("blood-pressure-systolic").value,
-          diastolic_pressure: document.getElementById("blood-pressure-diastolic").value,
-          blood_sugar: document.getElementById("blood-sugar").value,
-          body_temp: document.getElementById("btemp").value
+          // name: document.getElementById("name").value,
+          age: document.getElementById("age").valueAsNumber,
+          heart_rate: document.getElementById("heart-rate").valueAsNumber,
+          bp_systolic: document.getElementById("blood-pressure-systolic").valueAsNumber,
+          bp_diastolic: document.getElementById("blood-pressure-diastolic").valueAsNumber,
+          blood_sugar: document.getElementById("blood-sugar").valueAsNumber,
+          body_temp: document.getElementById("btemp").valueAsNumber
         }
-        postData("http://35.197.88.17/api/get_risk", patientData)
+        console.log(patientData)
+        postData("http://35.197.88.17/api/get_risk", patientData).then(data => {console.log(data)})
       }
       
       async function postData(url = '', data = {}) {
