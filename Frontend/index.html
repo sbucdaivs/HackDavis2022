@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>5K & 10K Registration Form</title>
+    <title>Biological Health Risk Assessment for Pregnant Women</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,7 +22,7 @@
         position: absolute;
         margin: 0;
         font-size: 40px;
-        color: #fff;
+        color: white;
         z-index: 2;
         line-height: 83px;
       }
@@ -186,13 +186,26 @@
       .phone-number {
         display: none;
       }
+      /* label[name="yes"] {
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+      }
+      label[name="no"] {
+        font-size: 16px;
+      } */
+
+      label {
+        font-size: 16px;
+      }
+  
     </style>
   </head>
   <body>
     <div class="testbox">
       <form action="/">
         <div class="banner">
-          <h1><strong>Health Risk for Pregnant Women</strong></h1>
+          <h1><strong>Biological Health Risk Assessment for Pregnant Women</strong></h1>
         </div>
         <p>Personal Information</p>
         <div class="item"> <!-- removed div class = "item" from each section separation one another-->
@@ -217,11 +230,12 @@
           <label for="notif">Would you like to be notified about your health risk?<span>*</span></label> 
           <br>
 
-          <input type="radio" name="yes" id="yes" value="yes" class="yes" > 
-          <label for="yes" name="yes" class="radio">Yes</label>
-          
-          <input type="radio" name,id,value="no">
+          <div class="yes-button">
+            <input type="radio" name="yes" id="yes" value="yes" class="yes">
+            <label for="yes" name="yes" class="radio">Yes</label>
+          </div> 
 
+          <input type="radio" name,id,value="no">
           <label for="no" name="no" class="radio">No</label> 
 
           <br>
@@ -235,9 +249,11 @@
         </div>
       </form>
       <br>
-      <p>Image is from <a href="https://www.paho.org/en/news/22-9-2020-paho-reports-more-60000-confirmed-cases-covid-19-pregnant-women-458-deaths"> 
-        the Pan American Health Organization</a></p>
-      <p>HTML Template is from <a href="https://www.w3docs.com/learn-html/html-form-templates.html">W3 Docs</a></p>
+      <div class="citations">
+        <p>Image is from <a href="https://www.paho.org/en/news/22-9-2020-paho-reports-more-60000-confirmed-cases-covid-19-pregnant-women-458-deaths"> 
+          the Pan American Health Organization</a></p>
+        <p>HTML Template is from <a href="https://www.w3docs.com/learn-html/html-form-templates.html">W3 Docs</a></p>
+      </div>
     </div> 
     <script> 
       $(".yes").click(function() {
