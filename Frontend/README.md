@@ -11,5 +11,6 @@
 
 ### Final Steps
 - Team name
+- HTML Form validation on the final website
 - Utilize Twilo API
 - More HTML styling
