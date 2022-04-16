@@ -41,8 +41,8 @@
       }
       .banner {
         position: relative;
-        height: 300px;
-        background-image: url("/uploads/media/default/0001/02/234656e7acbca4625305dd37e7344af8eff32383.jpeg");  
+        height: 1000px;
+        background-image: url("https://www.paho.org/sites/default/files/styles/max_1500x1500/public/2020-09/pregnant-mother-illustration-1500x984.jpg?itok=HQeU0ZHL");
         background-size: cover;
         display: flex;
         justify-content: center;
@@ -107,7 +107,7 @@
         cursor: pointer;
       }
       input[type=radio], input[type=checkbox]  {
-        display: none;
+       display: none;
       }
       label.radio {
         position: relative;
@@ -198,20 +198,48 @@
           <label for="age">How old are you? (in years)<span>*</span></label>
           <input id="age" type="number" name="age" required min="0" max="150" required/>
 
-          <label for="blood-pressure">What is your blood pressure? (in mmHg)<span>*</span></label>
-          <input type="number" id="blood-pressure" min="0" max="200" required/>
+          <label for="blood-pressure">What is your blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
+          <input type="number" id="blood-pressure" name="blood-pressure" min="0" max="200" required/>
 
           <label for="heart-rate">What is your resting heart rate? (in beats per minute)<span>*</span></label>
-          <input type="number" id="heart-rate" min="0" max="220" required/>
+          <input type="number" id="heart-rate" name="heart-rate" min="0" max="220" required/>
+            
+          <label for="btemp">What is your average body temperature? (in Fahrenheit)<span>*</span></label>
+          <input type="number" id="btemp" name="btemp" min="80" max="120" required/>
 
-        
+          <label for="blood-sugar">What is your blood sugar? (in mmol/L)<span>*</span></label>
+          <input type="number" id="blood-sugar" name="blood-sugar" min="0" max="20" required/>
 
+          <label for="notif">Would you like to be notified about your health risk?<span>*</span></label> 
+          <br>
 
+          <input type="radio" name="yes" id="yes" value="yes"> 
 
+          <label for="yes" name="yes" class="radio" onclick="func();">Yes</label>
+          
+          <input type="radio" name,id,value="no">
+
+          <label for="no" name="no" class="radio">No</label> 
+
+          <br>
+          <label for="phone">Enter your phone number:</label> <!-- make this only pop up if "Yes" is clicked-->
+          <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
+
+          
         <div class="btn-block">
           <button>Submit</button> <!-- make this type="submit"? ; locally, it is sending me back to the home directory--> 
         </div>
       </form>
-    </div>
+      <br>
+      <p>Image is from <a href="https://www.paho.org/en/news/22-9-2020-paho-reports-more-60000-confirmed-cases-covid-19-pregnant-women-458-deaths"> 
+        the Pan American Health Organization</a></p>
+      <p>HTML Template is from <a href="https://www.w3docs.com/learn-html/html-form-templates.html">W3 Docs</a></p>
+    </div> 
+    <script> 
+      function func() {
+        var checkbox = document.getElementsByClassName('yes');
+        
+      };
+    </script>
   </body>
 </html>
