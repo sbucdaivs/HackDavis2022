@@ -5,6 +5,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<<<<<<< HEAD
+    <link rel="stylesheet" href="style.css">
+=======
     <style>
       html, body {
         min-height: 100%;
@@ -200,14 +203,16 @@
       }
   
     </style>
+>>>>>>> 79bfb8fe2f63f3dfeae6a956c9f664c216696da3
   </head>
   <body>
     <div class="testbox">
         <div class="banner">
           <h1><strong>Biological Health Risk Assessment for Pregnant Women</strong></h1>
         </div>
-        <p>Personal Information</p>
-        <div class="item"> <!-- removed div class = "item" from each section separation one another-->
+        <h2>Personal Information</h2>
+        <div class="item">
+          <!-- Formatting for our input variables -->
           <label for="name">Name<span>*</span></label>
           <input id="name" type="text" name="name" required/>
 
@@ -257,10 +262,9 @@
       </div>
     </div> 
     <script> 
-      function func() {
-        var checkbox = document.getElementsByClassName('yes');
-        
-      };
+      $(".yes").click(function() {
+        $(".phone-number").show();
+      });
       function submit_data() {
         const patientData = {
           // name: document.getElementById("name").value,
@@ -292,10 +296,6 @@
         });
         return response.json(); // parses JSON response into native JavaScript objects
       }
-
-      $(".yes").click(function() {
-        $(".phone-number").show();
-      });
     </script>
   </body>
 </html>
