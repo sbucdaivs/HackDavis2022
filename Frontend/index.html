@@ -34,10 +34,12 @@
             <label for="age">How old are you? (in years)<span>*</span></label>
             <input class="wide-input" id="age" type="number" name="age" required min="0" max="150" required/>
 
-            <label for="blood-pressure-systolic">What is your systolic blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
+            <label for="blood-pressure-systolic">What is your <a href="https://www.cdc.gov/bloodpressure/about.htm" target="_blank">
+              systolic blood pressure</a>? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
             <input class="wide-input" type="number" id="blood-pressure-systolic" name="blood-pressure-systolic" min="0" max="200" required/>
 
-            <label for="blood-pressure-diastolic">What is your diastolic blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
+            <label for="blood-pressure-diastolic">What is your <a href="https://www.cdc.gov/bloodpressure/about.htm" target="_blank">
+              diastolic blood pressure</a>? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
             <input class="wide-input" type="number" id="blood-pressure-diastolic" name="blood-pressure-diastolic" min="0" max="200" required/>
 
             <label for="heart-rate">What is your resting heart rate? (in beats per minute)<span>*</span></label>
@@ -79,9 +81,16 @@
       <div class="assessment"> 
         <div class="low-risk">
           <h2>You have a low health risk!</h2>
-          <h3> Congratulations! Your responses identify you as a low risk individual. To keep it that way, 
-            <u>is necessary that you remember to maintain a steady exercise habit and choose your meals with prudence</u>. 
-            Please consult the CDC, Mayo Clinic, and other reliable sources for more information.</h3>
+          <h3> Congratulations! To stay at a low health risk, is necessary that you remember to maintain 
+            a steady exercise habit and choose your meals with prudence. 
+            Please consult the Centers for Disease Control and Prevention (CDC), Mayo Clinic, and other reliable sources for more information.</h3>
+            
+            <h4>Useful Resources:</h4>
+            <ul>
+              <li>CDC: <a href="https://www.cdc.gov/pregnancy/index.html" target="_blank">Pregnancy</a></li>
+              <li>Mayo Clinic: <a href="https://mcpress.mayoclinic.org/shop/pregnancy-books/mayo-clinic-guide-to-a-healthy-pregnancy/" target="_blank">
+                Mayo Clinic Guide to a Healthy Pregnancy, Second Edition</a></li>
+            </ul>
         </div>
 
         <div class="med-risk"> 
@@ -94,13 +103,13 @@
             </li>
             <br>
             <li>If your diastolic and systolic blood pressure are measured to be between 120-130 and 70-89 mmHg, <strong>it's best to 
-              adopt a healthier lifestyle and consult your doctor about taking medication</strong>. <u> Should the numbers be above that threshold, 
-              however, seek medical attention and talk to your doctor for taking multiple prescriptions</u> (Mayo Clinic).
+              adopt a healthier lifestyle and consult your doctor about taking medication</strong>. Should the numbers be above that threshold, 
+              however, seek medical attention and talk to your doctor for taking multiple prescriptions (Mayo Clinic).
             </li> 
           </ul>
 
           <div class="citations">
-            <p>Sources: <a href="https://www.cdc.gov/diabetes/managing/manage-blood-sugar.html" target="_blank">Disease Control and Prevention (CDC)</a>,
+            <p>Sources: <a href="https://www.cdc.gov/diabetes/managing/manage-blood-sugar.html" target="_blank">Centers for Disease Control and Prevention (CDC)</a>,
               <a href="https://www.mayoclinic.org/diseases-conditions/high-blood-pressure/in-depth/blood-pressure/art-20050982" target="_blank">Mayo Clinic</a>
             </p>
           </div> 
@@ -128,6 +137,9 @@
         <p>Cover Image Source: <a href="https://www.paho.org/en/news/22-9-2020-paho-reports-more-60000-confirmed-cases-covid-19-pregnant-women-458-deaths" target="_blank"> 
           Pan American Health Organization</a></p>
         <p>HTML Template Source: <a href="https://www.w3docs.com/learn-html/html-form-templates.html" target="_blank">W3 Docs</a></p>
+        <P>Machine Learning Dataset Source: <a href="https://archive.ics.uci.edu/ml/datasets/Maternal+Health+Risk+Data+Set" target="_blank">
+          UCI Machine Learning Repository</a>
+        </p>
       </div>
     </div> 
     <script src="main.js"></script>

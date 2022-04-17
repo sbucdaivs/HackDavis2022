@@ -227,7 +227,10 @@ label {
 }
 
 .citations {
+  font-size: 15px;
   text-align: left;
+  padding: 25px;
+  margin: 0;
 }
 
 h2 { 
@@ -249,7 +252,7 @@ h4 {
 }
 
 li {
-  font-size: 17px;
+  font-size: 18px;
   color: black;
   padding: 0;
   margin: 10px;
