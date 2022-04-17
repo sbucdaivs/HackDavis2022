@@ -18,9 +18,15 @@ function submit_data() {
     // showing the correct response
     if(data.risk_level == "low") {
       $(".low-risk").show();
+      $(".med-risk").hide();
+      $(".high-risk").hide();
     } else if (data.risk_level == "medium") {
+      $(".low-risk").hide();
       $(".med-risk").show();
+      $(".high-risk").hide();
     } else if (data.risk_level == "high") {
+      $(".low-risk").hide();
+      $(".med-risk").hide();
       $(".high-risk").show();
     }
   console.log(data)})
