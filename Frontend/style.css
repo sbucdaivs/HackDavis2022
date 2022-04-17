@@ -204,18 +204,15 @@ button:hover {
     padding-bottom:5px;
   }
 }
+
+legend {
+  font-size: 25px;
+  color: black;
+}
+
 .phone-number {
   display: none;
 }
-
-/* label[name="yes"] {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-}
-label[name="no"] {
-  font-size: 16px;
-} */
 
 label {
   font-size: 16px;

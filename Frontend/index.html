@@ -12,44 +12,48 @@
         <div class="banner">
           <h1><strong>Biological Health Risk Assessment for Pregnant Women</strong></h1>
         </div>
-        <h2>Personal Information</h2>
-        <div class="item">
-          <!-- Formatting for our input variables -->
-          <label for="name">Name<span>*</span></label>
-          <input id="name" type="text" name="name" required/>
+        <br>
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="item">
+            <!-- Formatting for our input variables -->
+            <label for="name">Name<span>*</span></label>
+            <input id="name" type="text" name="name" required/>
 
-          <label for="age">How old are you? (in years)<span>*</span></label>
-          <input id="age" type="number" name="age" required min="0" max="150" required/>
+            <label for="age">How old are you? (in years)<span>*</span></label>
+            <input id="age" type="number" name="age" required min="0" max="150" required/>
 
-          <label for="blood-pressure-systolic">What is your systolic blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
-          <input type="number" id="blood-pressure-systolic" name="blood-pressure-systolic" min="0" max="200" required/>
+            <label for="blood-pressure-systolic">What is your systolic blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
+            <input type="number" id="blood-pressure-systolic" name="blood-pressure-systolic" min="0" max="200" required/>
 
-          <label for="blood-pressure-diastolic">What is your diastolic blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
-          <input type="number" id="blood-pressure-diastolic" name="blood-pressure-diastolic" min="0" max="200" required/>
+            <label for="blood-pressure-diastolic">What is your diastolic blood pressure? (in mmHg)<span>*</span></label>  <!-- two values with the same ranges-->
+            <input type="number" id="blood-pressure-diastolic" name="blood-pressure-diastolic" min="0" max="200" required/>
 
-          <label for="heart-rate">What is your resting heart rate? (in beats per minute)<span>*</span></label>
-          <input type="number" id="heart-rate" name="heart-rate" min="0" max="220" required/>
-            
-          <label for="btemp">What is your average body temperature? (in Fahrenheit)<span>*</span></label>
-          <input type="number" id="btemp" name="btemp" min="80" max="120" required/>
+            <label for="heart-rate">What is your resting heart rate? (in beats per minute)<span>*</span></label>
+            <input type="number" id="heart-rate" name="heart-rate" min="0" max="220" required/>
+              
+            <label for="btemp">What is your average body temperature? (in Fahrenheit)<span>*</span></label>
+            <input type="number" id="btemp" name="btemp" min="80" max="120" required/>
 
-          <label for="blood-sugar">What is your blood sugar? (in mmol/L)<span>*</span></label>
-          <input type="number" id="blood-sugar" name="blood-sugar" min="0" max="20" required/>
-
-          <label for="notif">Would you like to be notified about your health risk?<span>*</span></label> 
-          <br>
+            <label for="blood-sugar">What is your blood sugar? (in mmol/L)<span>*</span></label>
+            <input type="number" id="blood-sugar" name="blood-sugar" min="0" max="20" required/>
+        </fieldset>
+        <br>
+          <div class="item">
+            <label for="notif">Would you like to be notified about your health risk?<span>*</span></label> 
+          </div>
 
           <div class="yes-button">
             <input type="radio" name="yes" id="yes" value="yes" class="yes">
             <label for="yes" name="yes" class="radio">Yes</label>
           </div> 
 
-          <input type="radio" name,id,value="no">
+          <input type="radio" name="no" class="no">
           <label for="no" name="no" class="radio">No</label> 
 
           <br>
           <div class="phone-number">
-            <label for="phone">Enter your phone number:</label> <!-- make this only pop up if "Yes" is clicked-->
+            <label for="phone">Please enter your phone number:</label> <!-- make this only pop up if "Yes" is clicked-->
             <input type="tel" id="phone" name="phone" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> 
           </div>
           <br> 
