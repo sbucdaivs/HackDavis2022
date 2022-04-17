@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 fastapi = "*"
 uvicorn = "*"
+sklearn = "*"
+pandas = "*"
+numpy = "*"
 
 [dev-packages]
 
