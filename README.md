@@ -13,9 +13,12 @@
 ### Final Steps
 - ~~Team name (Riskquido?)~~
 - HTML Form validation on the final website
-- Citing the dataset used for ML
+- ~~Citing the dataset used for ML~~
 - Utilize Twilo API
 - More HTML styling
+- Hosting live website on a Google Cloud Server
 
 ###  Dev Website 
 - Talking about the whole process
+- Demo video
+
