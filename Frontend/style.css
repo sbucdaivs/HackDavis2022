@@ -253,7 +253,7 @@ li {
 }
 
 .med-risk {
-
+  display: none;
   background-color: yellow;
   border: 1px solid black;
   text-align: center;
