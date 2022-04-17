@@ -183,7 +183,7 @@ button {
   border: none;
   border-radius: 5px; 
   background: #cc7a00;
-  font-size: 16px;
+  font-size: 17px;
   color: #fff;
   cursor: pointer;
 }
@@ -232,24 +232,28 @@ label {
 
 h2 { 
   font-size: 30px;
+  padding: 10px;
 }
 
 h3 {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   margin: 20px;
   font-size: 18px;
 }
 
 h4 {
   text-align: left;
-  padding: 10px;
-  font-size: 16px;
+  margin: 30px;
+  font-size: 20px;
 }
 
 li {
   font-size: 17px;
   color: black;
+  padding: 0;
+  margin: 10px;
+  text-align: left;
 }
 
 .low-risk {
@@ -268,14 +272,14 @@ li {
 
 .high-risk {
   display: none;
-  background-color: red;
+  background-color: rgb(230, 24, 24);
   border: 1px solid black;
   text-align: center;
 }
 
 u { 
-  font-size: 20px;
-  color: rgb(199, 90, 199);
+  font-size: 19px;
+  color: rgb(201, 104, 201);
 }
 
 .assessment {
