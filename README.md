@@ -13,6 +13,7 @@
 ### Final Steps
 - ~~Team name (Riskquido?)~~
 - HTML Form validation on the final website
+- Citing the dataset used for ML
 - Utilize Twilo API
 - More HTML styling
 
