@@ -1,10 +1,11 @@
 # HackDavis2022
 
 ### Frontend To-Do List:
-- HTML Forms
+- HTML Forms (button overlapping with words) 
 - Form validation
 - Sending inputs to a Google Cloud Server (using fetch API?)
 - Design of the website image
+- **Description about the form and its purpose above the image**
 
 ### Backend To-Do List:
 - Connect model to ML API
