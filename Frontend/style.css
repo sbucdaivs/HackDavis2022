@@ -230,11 +230,13 @@ h3 {
   text-align: center;
   padding: 20px;
   margin: 20px;
+  font-size: 18px;
 }
 
 h4 {
   text-align: left;
   padding: 10px;
+  font-size: 16px;
 }
 
 li {
@@ -263,9 +265,32 @@ li {
   text-align: center;
 }
 
+u { 
+  font-size: 20px;
+}
+
 .assessment {
   display: flex;
   justify-content: center;
   padding: 20px;
   margin: 15px;
+}
+
+.bio {
+  text-align: left;
+  padding: 13px;
+  margin: 20px;
+  border-left: 2px rgb(107, 107, 243) solid;
+  font-size: 19px;
+  background: lightblue;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.about {
+  font-size: 30px;
 }
