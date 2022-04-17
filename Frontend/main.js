@@ -3,6 +3,11 @@ $("#yes").click(function() {
   $(".phone-number").show();
 });
 
+// onclick handler for the no checkbox
+$("#no").click(function() {
+  $(".phone-number").hide();
+});
+
 function submit_data() {
   const patientData = {
     // name: document.getElementById("name").value,
