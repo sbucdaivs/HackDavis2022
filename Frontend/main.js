@@ -14,7 +14,16 @@ function submit_data() {
     body_temp: document.getElementById("btemp").valueAsNumber
   }
   console.log(patientData)
-  postData("http://35.197.88.17/api/get_risk", patientData).then(data => {console.log(data)})
+  postData("http://35.197.88.17/api/get_risk", patientData).then(data => {
+    // showing the correct response
+    if(data.risk_level == "low") {
+      $(".low-risk").show();
+    } else if (data.risk_level == "medium") {
+      $(".med-risk").show();
+    } else if (data.risk_level == "high") {
+      $(".high-risk").show();
+    }
+  console.log(data)})
 }
 
 async function postData(url = '', data = {}) {
