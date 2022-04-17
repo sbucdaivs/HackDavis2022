@@ -62,7 +62,7 @@ input, select, textarea {
   border-radius: 3px;
 }
 
-input {
+.wide-input {
   width: calc(100% - 10px);
   padding: 5px;
   border: 2px rgb(53, 50, 50) solid;
@@ -118,9 +118,9 @@ input[type="date"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-input[type=radio], input[type=checkbox]  {
+/* input[type=radio], input[type=checkbox]  {
  display: none;
-}
+} */
 
 label.radio {
   position: relative;
@@ -147,11 +147,11 @@ label.radio:before {
   border: 2px solid #ccc;
 }
 
-input[type=radio]:checked + label:before, label.radio:hover:before {
+/* input[type=radio]:checked + label:before, label.radio:hover:before {
   border: 2px solid #cc7a00;
-}
+} */
 
-label.radio:after {
+/* label.radio:after {
   content: "";
   position: absolute;
   top: 6px;
@@ -163,11 +163,11 @@ label.radio:after {
   border-right: none;
   transform: rotate(-45deg);
   opacity: 0;
-}
+} */
 
-input[type=radio]:checked + label:after {
+/* input[type=radio]:checked + label:after {
   opacity: 1;
-}
+} */
 
 .btn-block {
   margin-top: 10px;

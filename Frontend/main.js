@@ -1,5 +1,5 @@
 // onclick handler for the yes checkbox
-$(".yes").click(function() {
+$("#yes").click(function() {
   $(".phone-number").show();
 });
 
