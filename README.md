@@ -14,3 +14,6 @@
 - HTML Form validation on the final website
 - Utilize Twilo API
 - More HTML styling
+
+###  Dev Website 
+- Talking about the whole process
