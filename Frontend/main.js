@@ -8,14 +8,6 @@ $("#no").click(function() {
   $(".phone-number").hide();
 });
 
-age = document.getElementById('age');
-
-$(".btn").click(function() {
-  if(age < 0 || age > 150) {
-    console.log("hi");
-  }
-});
-
 function submit_data() {
   const patientData = {
     // name: document.getElementById("name").value,
