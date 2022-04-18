@@ -12,10 +12,10 @@
 
 ### Final Steps
 - ~~Team name (Riskquido?)~~
-- HTML Form validation on the final website (was working locally prior to connecting with backend)
+- **HTML Form validation on the final website** (was working locally prior to connecting with backend)
 - ~~Citing the dataset used for ML~~
-- Utilize Twilo API (didn't have enough time to complete) 
-- ~~More HTML styling
+- **Utilize Twilo API** (didn't have enough time to complete) 
+- **More HTML styling** (a general area of improvement)
 - ~~Hosting live website on a Google Cloud Server~~
 
 ###  Dev Website 
